@@ -325,7 +325,7 @@ class ResultTables():
             model (class, optional): Model instance
         '''
 
-        results = model.clientModel.service.get_results_for_efeective_lengths_and_critical_loads_by_eigenvector(
+        results = model.clientModel.service.get_results_for_effective_lengths_and_critical_loads_by_eigenvector(
             loading_type.name,
             loading_no,
             object_locations = None  # TODO: add filtering by mode shape number
@@ -352,7 +352,7 @@ class ResultTables():
 
         object_locations = CreateObjectLocation(ObjectTypes.E_OBJECT_TYPE_MEMBER.name, object_no)
 
-        results = model.clientModel.service.get_results_for_efeective_lengths_and_critical_loads_by_member(
+        results = model.clientModel.service.get_results_for_effective_lengths_and_critical_loads_by_member(
             loading_type.name,
             loading_no,
             object_locations
